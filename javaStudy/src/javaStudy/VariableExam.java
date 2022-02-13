@@ -10,7 +10,6 @@ public class VariableExam {
 		System.out.println(count);
 		
 		double avg = 11.1;
-	    
 
 		System.out.println(avg);
 		
