@@ -1,0 +1,11 @@
+package javaStudy;
+
+public class StringExam {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String str1 = "helo";
+
+	}
+
+}

@@ -7,6 +7,8 @@
         <listEntry value="1"/>
     </listAttribute>
     <booleanAttribute key="org.eclipse.jdt.launching.ATTR_EXCLUDE_TEST_CODE" value="true"/>
+    <booleanAttribute key="org.eclipse.jdt.launching.ATTR_USE_CLASSPATH_ONLY_JAR" value="false"/>
+    <stringAttribute key="org.eclipse.jdt.launching.JRE_CONTAINER" value="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/jdk-11.0.15"/>
     <stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="javaStudy.VariableExam"/>
     <stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="javaStudy"/>
 </launchConfiguration>

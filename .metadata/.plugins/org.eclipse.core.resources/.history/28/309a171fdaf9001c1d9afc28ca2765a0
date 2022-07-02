@@ -1,0 +1,15 @@
+package javaStudy;
+
+public class StringExam {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String str1 = "hello";
+		String str2 = "hello"; // 상수 영역에 저장됨
+		
+		String str3 = new String("hello");
+		String str4 = new String("hello");
+		
+	}
+
+}
