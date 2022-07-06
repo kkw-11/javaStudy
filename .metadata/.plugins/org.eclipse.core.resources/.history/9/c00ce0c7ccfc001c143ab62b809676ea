@@ -1,0 +1,48 @@
+package javaStudy;
+
+public class VariableScopeExam {
+	int globalScope = 10;
+	static int staticVal = 7;
+	
+	public void scopeTest(int value) {
+		int localScope = 20;
+		
+		
+		
+		System.out.println(localScope);
+		System.out.println(value);
+		
+		// 전역 변수 테스트
+		System.out.println(globalScope);
+		
+		
+		
+	}
+	
+	public void scopeTest2(int value2) {
+		System.out.println(globalScope);
+//		System.out.println(localScope);
+//		System.out.println(value1);
+		
+		System.out.println(value2);
+
+	}
+	
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		scopeTest(3);
+		
+		System.out.println(globalScope);
+//		System.out.println(localScope);
+//		System.out.println(value1);
+		
+//		System.out.println(value2);
+		
+//		System.out.println(staticVal);
+		
+		
+		VariableScopeExam v1 = new VariableScopeExam();
+	}
+
+}
