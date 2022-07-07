@@ -6,8 +6,5 @@ public class Car {
 	String name;
 	int num;
 	
-	public Car(String name) {
-		this.name = name;
-	 }
 	
 }
