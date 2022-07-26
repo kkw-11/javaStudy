@@ -12,7 +12,7 @@ public class MethodOverloadExam {
 		
 		System.out.println(mc.plus(1,2));
 		System.out.println(mc.plus(1,2,3));
-		System.out.println(mc.plus("11","22"));
+		System.out.println(mc.plus("Hello ","World"));
 		
 	}
 

@@ -1,0 +1,47 @@
+class MyClass {
+    public int solution(int[][] office, int r, int c, String[] move) {
+        int answer = 0;
+        
+        //북 동 남 서
+        int[] dir_r = {-1,0,1,0};
+        int[] dir_c = {0,1,0,-1};
+        int dir = 0;
+        int n = office.length;
+        
+        for(int i = 0; i < move.length; ++i){
+            if (office[r][c] >= 0){
+                answer += office[r][c];
+                office[r][c] = 0;
+            }
+            System.out.print(i + "::");
+            System.out.println(move[i]);
+            System.out.print(r);
+            System.out.print(", ");
+            System.out.print(c);
+            System.out.print(": ");
+            System.out.println(answer);
+
+            if(move[i].equals("go")){
+                int next_r = r + dir_r[dir];
+                int next_c = c + dir_c[dir];
+
+                if(next_r < 0 || next_r >= n || next_c < 0 || next_c >= n) continue;
+
+                if(office[next_r][next_c] == -1) continue;
+                r = next_r;
+                c = next_c;
+            }
+            else if(move[i].equals("right") ){
+                dir = (dir + 1) % 4;
+            }
+            else if(move[i].equals("left")){
+                dir = dir - 1;
+                if (dir < 0) dir = 3;
+            }
+            System.out.println("dir:"+dir);
+        }
+
+
+        return answer;
+    }
+}
